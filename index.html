@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian Armed Forces | Command & Staff Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Aesthetic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">AFCSC <span>Archive</span></div>
+        <ul class="nav-links">
+            <li><a href="#history">History</a></li>
+            <li><a href="#milestones">Milestones</a></li>
+            <li><a href="#gallery">Visual Archives</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content glass-panel">
+            <h1>Armed Forces Command & Staff College</h1>
+            <p>A Legacy of Excellence, Training, and National Security.</p>
+            <button class="primary-btn" onclick="document.getElementById('history').scrollIntoView({behavior: 'smooth'})">Explore Archives</button>
+        </div>
+    </header>
+
+    <!-- Document Content Section (PDF & DOCX Integration) -->
+    <section id="history" class="content-section">
+        <h2 class="section-title">Historical Overview</h2>
+        
+        <div class="glass-card doc-container">
+            <div class="doc-text">
+                <h3>The Beginning</h3>
+                <p>
+                    <!-- PLACEHOLDER: INSERT PDF CONTENT HERE -->
+                    The Armed Forces Command and Staff College (AFCSC) was established to train officers in command and staff duties. The inaugural address by Gen. Olusegun Obasanjo marked the beginning of a new era in military professionalism. 
+                    <br><br>
+                    
+                </p>
+            </div>
+            <div class="doc-image">
+                <img src="images/img7.jpg" alt="Gen Olusegun Obasanjo Inaugural Address" class="large-img">
+                <p class="caption">"In The Beginning" - Inaugural address by Gen. Olusegun Obasanjo.</p>
+            </div>
+        </div>
+
+        <div class="glass-card doc-container reverse">
+            <div class="doc-text">
+                <h3>The Evolution</h3>
+                <p>
+                    <!-- PLACEHOLDER: INSERT DOCX CONTENT HERE -->
+                    The evolution of the Nigerian Air Force has been defined by strategic leadership, technical proficiency, and operational readiness. From early training missions to modern drone maintenance and air power seminars.
+                    <br><br>
+                    
+                </p>
+            </div>
+            <div class="doc-image">
+                <img src="images/img9.jpg" alt="Air Marshal S.K. Aneke" class="large-img">
+                <p class="caption">Air Marshal S.K. Aneke, Chief of the Air Staff.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Timeline Section -->
+    <section id="milestones" class="content-section">
+        <h2 class="section-title">Milestones</h2>
+        <p class="section-subtitle">* Founding year established as 1978. The committee reconciled earlier references to 1976 against the records.</p>
+        
+        <div class="milestone-layout">
+            <!-- Timeline Sidebar -->
+            <div class="timeline-list glass-card">
+                <button class="timeline-btn active" onclick="updateMilestone(0)">
+                    <span class="dot"></span> 16 Mar 1978
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(1)">
+                    <span class="dot"></span> 26 Feb 1979
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(2)">
+                    <span class="dot"></span> Aug 1986
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(3)">
+                    <span class="dot"></span> 3 Jul 1986 – 4 Jul 1987
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(4)">
+                    <span class="dot"></span> 9 Jun 2000
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(5)">
+                    <span class="dot"></span> 2 Dec 2002
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(6)">
+                    <span class="dot"></span> 27 May 2019
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(7)">
+                    <span class="dot"></span> 12 Feb 2024
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(8)">
+                    <span class="dot"></span> Feb 2024
+                </button>
+                <button class="timeline-btn" onclick="updateMilestone(9)">
+                    <span class="dot"></span> Dec 2024
+                </button>
+            </div>
+
+            <!-- Display Area -->
+            <div class="milestone-display glass-card" id="milestone-display">
+                <div class="milestone-content">
+                    <h3 id="ms-date">16 Mar 1978</h3>
+                    <p id="ms-text">Air Faculty established, running the Senior Course only.</p>
+                </div>
+                <div class="milestone-image-holder">
+                    <img id="ms-image" src="images/img1.jpg" alt="Milestone Image" class="large-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorized Image & Video Gallery -->
+    <section id="gallery" class="content-section">
+        <h2 class="section-title">Visual & Video Archives</h2>
+        
+        <!-- Category 1: Historical Archives -->
+        <h3 class="category-title">Historical Archives</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img1.jpg', 'image')">
+                <img src="images/img1.jpg" alt="AFCSC 1 Class">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img2.jpg', 'image')">
+                <img src="images/img2.jpg" alt="Former College HQ Complex">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img3.jpg', 'image')">
+                <img src="images/img3.jpg" alt="Inauguration of CSC Course 1">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img4.jpg', 'image')">
+                <img src="images/img4.jpg" alt="Military Inspection">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img5.jpg', 'image')">
+                <img src="images/img5.jpg" alt="Saluting the Officer">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img6.jpg', 'image')">
+                <img src="images/img6.jpg" alt="Arrival of the Dignitary">
+            </div>
+        </div>
+
+        <!-- Category 2: Modern Operations & Training -->
+        <h3 class="category-title">Modern Operations & Training</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img7.jpg', 'image')">
+                <img src="images/img7.jpg" alt="Officer Portrait">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img8.jpg', 'image')">
+                <img src="images/img8.jpg" alt="Air Force Personnel">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img9.jpg', 'image')">
+                <img src="images/img9.jpg" alt="Air Marshal Portrait">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img10.jpg', 'image')">
+                <img src="images/img10.jpg" alt="Military Parade">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img11.jpg', 'image')">
+                <img src="images/img11.jpg" alt="Training Mission">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img12.jpg', 'image')">
+                <img src="images/img12.jpg" alt="Drone Maintenance">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img13.jpg', 'image')">
+                <img src="images/img13.jpg" alt="Aircraft Engine Repair">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img14.jpg', 'image')">
+                <img src="images/img14.jpg" alt="Military Command">
+            </div>
+            <div class="gallery-item glass-panel" onclick="openLightbox('images/img15.jpg', 'image')">
+                <img src="images/img15.jpg" alt="Officer Briefing">
+            </div>
+        </div>
+
+        <!-- Category 3: Video Documentaries -->
+        <h3 class="category-title">Video Documentaries</h3>
+        <div class="gallery-grid video-grid">
+            <!-- Added onclick to expand video in modal, and a play overlay -->
+            <div class="gallery-item glass-panel video-item" onclick="openLightbox('https://drive.google.com/file/d/1fkTOpm4I3M1Yb-iJSx2WBym05Dddsha8/preview', 'video')">
+                <div class="video-overlay"><svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+                <iframe src="https://drive.google.com/file/d/1fkTOpm4I3M1Yb-iJSx2WBym05Dddsha8/preview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="pointer-events: none;"></iframe>
+            </div>
+            <div class="gallery-item glass-panel video-item" onclick="openLightbox('https://drive.google.com/file/d/1xJQIt0riqYj330BxnpF7D_-liSybvdO2/preview', 'video')">
+                <div class="video-overlay"><svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+                <iframe src="https://drive.google.com/file/d/1xJQIt0riqYj330BxnpF7D_-liSybvdO2/preview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="pointer-events: none;"></iframe>
+            </div>
+            <div class="gallery-item glass-panel video-item" onclick="openLightbox('https://drive.google.com/file/d/1A8SuX1ELqX6owMwoptK2tX61jSVLuqbl/preview', 'video')">
+                <div class="video-overlay"><svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+                <iframe src="https://drive.google.com/file/d/1A8SuX1ELqX6owMwoptK2tX61jSVLuqbl/preview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="pointer-events: none;"></iframe>
+            </div>
+            <div class="gallery-item glass-panel video-item" onclick="openLightbox('https://drive.google.com/file/d/1cvXXqk7GqeZUxNsNhDjgEWb3MM6BbXJZ/preview', 'video')">
+                <div class="video-overlay"><svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+                <iframe src="https://drive.google.com/file/d/1cvXXqk7GqeZUxNsNhDjgEWb3MM6BbXJZ/preview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="pointer-events: none;"></iframe>
+            </div>
+            <div class="gallery-item glass-panel video-item" onclick="openLightbox('https://drive.google.com/file/d/1W5Rp2wmZ8MtpXEARdUapcqe6Wz3Pnyrc/preview', 'video')">
+                <div class="video-overlay"><svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>
+                <iframe src="https://drive.google.com/file/d/1W5Rp2wmZ8MtpXEARdUapcqe6Wz3Pnyrc/preview" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="pointer-events: none;"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal (Updated to handle both images and videos) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" style="display: none;" alt="Zoomed Image">
+        <iframe class="lightbox-content" id="lightbox-video" style="display: none;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <p>&copy; 2026 Nigerian Armed Forces Archive.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
